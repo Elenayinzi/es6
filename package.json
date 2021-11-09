@@ -1,0 +1,11 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Elenayinzi/es6.git",
+  "author": "liaoyin <liaoyin@hzqykeji.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
