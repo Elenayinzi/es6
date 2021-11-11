@@ -564,18 +564,61 @@
 /**
  * es8(2017)
  */
-const obj = {
-    foo: 'value1',
-    bar: 'value2'
-}
+// const obj = {
+//     foo: 'value1',
+//     bar: 'value2'
+// }
 //Object.values
-console.log(Object.values(obj))
+//console.log(Object.values(obj)) //['value1','value2']
+//console.log(Object.keys(obj)) //['foo','bar']
 
 //Object.entries
-console.log(Object.entries(obj))
+//console.log(Object.entries(obj)) //[['foo','values'],['bar','value2']]
+// for( const [key, value] of Object.entries(obj)) {
+//     console.log(key,value)
+// }
+//console.log(new Map(Object.entries(obj))) //Map结构数据
+//Object.getOwnPropertyDescriptors,获取对象属性的完整描述信息
+// const p1 = {
+//     firstName: 'lei',
+//     lastName: 'li',
+//     get fullName() {
+//         return this.firstName + ' ' + this.lastName
+//     }
+// }
+// console.log(p1.fullName)
+// const p2 = Object.assign({},p1)
+// p2.firstName = 'zce'
+// console.log(p2.fullName)
+// const descriptors = Object.getOwnPropertyDescriptors(p1)
+// const p2 = Object.defineProperties({},descriptors)
+// p2.firstName = 'zce'
+// console.log(p2.fullName)
 
-//Object.getOwnPropertyDescriptors
-const p1 = {
-    firstName: 'lei'
+//String.prototype.padStart/padEnd，字符串填充方法
+// const books = {
+//     html: 5,
+//     css: 16,
+//     javascript: 128
+// }
+// for(const [name, count] of Object.entries(books)) {
+//     console.log(name, count)
+// }
+// for( const [name, count] of Object.entries(books)) {
+//     console.log(`${name.padEnd(16,'-')}|${count.toString().padStart(3,'0')}`)
+// }
+
+//在函数最后一个参数后面添加尾逗号
+function foo (
+    bar, 
+    baz,
+) {
+
 }
-//console.log(Object.getOwnPropertyDescriptors())
+
+const arr = [
+    100,
+    200,
+    300,
+    400,
+]
