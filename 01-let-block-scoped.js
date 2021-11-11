@@ -579,5 +579,3 @@ const p1 = {
     firstName: 'lei'
 }
 //console.log(Object.getOwnPropertyDescriptors())
-
-//
